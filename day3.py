@@ -2,7 +2,6 @@ f = open("day3.txt", "r")
 total = 0
 matrix = []
 numLocations = {
-
 }
 
 def isSymbol(char):
@@ -77,7 +76,7 @@ for row in range(rowMax):
     while col < colMax:
         if isSymbol(matrix[row][col]):
             # print (matrix[row][col] + " at " + str(row) + ", " + str(col))
-            partNumber(row, col+1)
+            partNumber(row, col)
             col += 1
         else:
             col += 1
